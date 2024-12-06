@@ -22,7 +22,6 @@
 				// if we have a response then insert content into the list and add event listener to each list item
 				insertContent(response);
 				setTagsButton();
-				setSortButtons();
 				setSearchButton();
 				setYearsButton();
 			}
@@ -45,6 +44,7 @@
 			node.setAttribute("data-tag", response[i].tag);
 			node.setAttribute("data-colors", response[i].colors);
 			node.setAttribute("data-year", response[i].year);
+			node.setAttribute("data-how", response[i].how);
 			node.id = i;
 
 			let child = document.createElement("div");
@@ -87,6 +87,7 @@
 	document.getElementById("search").style.display = "none"
 	document.getElementById("filters").style.display = "none"
 	document.getElementById("years").style.display = "none"
+	document.getElementById("how").style.display = "none"
 
 	function setTagsButton() {
 		let buttonTag = document.querySelectorAll('.button-buttons-filters');
@@ -112,6 +113,19 @@
 				}
 				else {
 					document.getElementById("years").style.display = "none";
+					button.classList.remove("active");
+				}
+			})
+		})
+		let buttonHow = document.querySelectorAll('.button-buttons-how');
+		buttonHow.forEach((button) => {
+			button.addEventListener('click', (e) => {
+				if (!button.classList.contains("active")) {
+					document.getElementById("how").style.display = "block";
+					button.classList.add("active");
+				}
+				else {
+					document.getElementById("how").style.display = "none";
 					button.classList.remove("active");
 				}
 			})
@@ -168,88 +182,32 @@
 						}
 					})
 				}
-
 			})
-
 		})
-	}
 
-	// set sort button
-	function setSortButtons() {
-		let buttonColor = document.querySelectorAll('.button-sort-color')
-		let buttonTitle = document.querySelectorAll('.button-sort-title')
-		let buttonYear = document.querySelectorAll('.button-sort-year')
-
-		// sort by colors
-		buttonColor.forEach((button) => {
-			// attach event to button sort
+		let buttons3 = document.querySelectorAll('.button-how');
+		buttons3.forEach((button) => {
+			// attach event to button
 			button.addEventListener('click', (e) => {
-				let sort = e.target.dataset.sort;
-					// get all items
-					var subjects = document.querySelectorAll('.list-item');
-					// convert to array
-					var subjectsArray = Array.from(subjects);
-					// sort by color
-					let sorted = subjectsArray.sort(comparatorColors);
-					// insert content
-					sorted.forEach(e => document.querySelector("#list").appendChild(e));
+				let how = e.target.dataset.how;
+				if (how == 'all') {
+					insertContent(response);
+				}
+				else {
+					// insert all content
+					insertContent(response);
+					// remove all items that don't have the tag
+					let items = document.querySelectorAll('.list-item');
+					// loop all items
+					items.forEach((item) => {
+						// check if item has the tag
+						if (!item.dataset.how.includes(how) && !item.dataset.colors.includes(how)) {
+							list.removeChild(item);
+						}
+					})
+				}
 			})
 		})
-
-		// sort by title
-		buttonTitle.forEach((button) => {
-			button.addEventListener('click', (e) => {
-				let sort = e.target.dataset.sort;
-					var subjects = document.querySelectorAll('.list-item');
-					var subjectsArray = Array.from(subjects);
-					let sorted = subjectsArray.sort(comparatorTitle);
-					sorted.forEach(e => document.querySelector("#list").appendChild(e));
-			})
-		})
-
-		// sort by year
-		buttonYear.forEach((button) => {
-			button.addEventListener('click', (e) => {
-				let sort = e.target.dataset.sort;
-					var subjects = document.querySelectorAll('.list-item');
-					var subjectsArray = Array.from(subjects);
-					let sorted = subjectsArray.sort(comparatorYear);
-					sorted.forEach(e => document.querySelector("#list").appendChild(e));
-			})
-		})
-	}
-
-	// sort by title
-	function comparatorTitle(a, b) {
-		if (a.dataset.title < b.dataset.title) {
-			return -1;
-		}
-		if (a.dataset.title > b.dataset.title) {
-			return 1;
-		}
-		return 0;
-	}
-
-	// sort by color
-	function comparatorColors(a, b) {
-		if (a.dataset.colors < b.dataset.colors) {
-			return -1;
-		}
-		if (a.dataset.colors > b.dataset.colors) {
-			return 1;
-		}
-		return 0;
-	}
-
-	// sort by year
-	function comparatorYear(a, b) {
-		if (a.dataset.year < b.dataset.year) {
-			return -1;
-		}
-		if (a.dataset.year > b.dataset.year) {
-			return 1;
-		}
-		return 0;
 	}
 
 	function setSearchButton() {

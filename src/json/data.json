@@ -3,180 +3,210 @@
         "image": "001.png",
         "title": "Macchinina Kinder",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "002.png",
         "title": "Macchinina PK oro",
         "tag": "toy",    
-        "year": "2024"
+        "year": "2024",
+        "how": "random"
     },
     {
         "image": "003.png",
         "title": "Carta Pokémon Staravia",
         "tag": "game",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "004.png",
         "title": "Macchinina Maggiolino Gialla",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "005.png",
         "title": "Casella Pokémon Fuecoco",
         "tag": "game",
-        "year": "2023"
+        "year": "2023",
+        "how": "random"
     },
     {
         "image": "006.png",
         "title": "Moneta 5 lire",
         "tag": "jewel",
-        "year": "2023"
+        "year": "2023",
+        "how": "hike"
     },
     {
         "image": "007.png",
         "title": "Sasso pitturato",
         "tag": "personal",
-        "year": "2023"
+        "year": "2023",
+        "how": "hike"
     },
     {
         "image": "008.png",
         "title": "Casella Pokémon Pikachu",
         "tag": "game",
-        "year": "2024"
+        "year": "2024",
+        "how": "random"
     },
     {
         "image": "009.png",
         "title": "Gorilla mutilato",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "010.png",
         "title": "Lettera d'amore",
         "tag": "personal",
-        "year": "2022"
+        "year": "2022",
+        "how": "random"
     },
     {
         "image": "011.png",
         "title": "Biglietto da visita",
         "tag": "personal",
-        "year": "2021"
+        "year": "2021",
+        "how": "hike"
     },
     {
         "image": "012.png",
         "title": "Banconota 100 CHF",
         "tag": "jewel",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "013.png",
         "title": "Moneta thailandese",
         "tag": "jewel",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "014.png",
         "title": "Carta Bluff Party",
         "tag": "game",
-        "year": "2023"
+        "year": "2023",
+        "how": "random"
     },
     {
         "image": "015.png",
         "title": "Casella esagonale",
         "tag": "game",
-        "year": "2023"
+        "year": "2023",
+        "how": "random"
     },
     {
         "image": "016.png",
         "title": "Pettine mini",
         "tag": "personal",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "017.png",
         "title": "Scheda SD",
         "tag": "personal",
-        "year": "2021"
+        "year": "2021",
+        "how": "random"
     },
     {
         "image": "018.png",
         "title": "Moneta 5 CHF",
         "tag": "jewel",
-        "year": "2024"
+        "year": "2024",
+        "how": "hike"
     },
     {
         "image": "019.png",
         "title": "LEGO blu",
         "tag": "build",
-        "year": "2024"
+        "year": "2024",
+        "how": "random"
     },
     {
         "image": "020.png",
         "title": "Carta J di fiori",
         "tag": "game",
-        "year": "2024"
+        "year": "2024",
+        "how": "random"
     },
     {
         "image": "021.png",
         "title": "Costruzione a incastro",
         "tag": "build",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "022.png",
         "title": "Cane Dalmata pompiere",
         "tag": "toy",
-        "year": "2021"
+        "year": "2021",
+        "how": "hike"
     },
     {
         "image": "023.png",
         "title": "Iguana",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "024.png",
         "title": "Giocatore in verde",
         "tag": "toy",
-        "year": "2024"
+        "year": "2024",
+        "how": "random"
     },
     {
         "image": "025.png",
         "title": "LEGO DUPLO rosso",
         "tag": "build",
-        "year": "2023"
+        "year": "2023",
+        "how": "random"
     },
     {
         "image": "026.png",
         "title": "Triceratopo",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     },
     {
         "image": "027.png",
         "title": "Brontosauro dimezzato",
         "tag": "toy",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "028.png",
         "title": "Nobile verde inquietante",
         "tag": "toy",
-        "year": "2022"
+        "year": "2022",
+        "how": "volunteer"
     },
     {
         "image": "029.png",
         "title": "Omino blu con casco",
         "tag": "toy",
-        "year": "2024"
+        "year": "2024",
+        "how": "volunteer"
     },
     {
         "image": "030.png",
         "title": "Cane pirata",
         "tag": "toy",
-        "year": "2023"
+        "year": "2023",
+        "how": "volunteer"
     }
 ]

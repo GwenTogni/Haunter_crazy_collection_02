@@ -1,7 +1,7 @@
 /* Default stylesheet and tools */
 body,
 html {
-	background: rgb(60, 60, 150);
+	background: rgb(0, 20, 50);
 	padding: 0;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -29,10 +29,6 @@ button:focus {
 	color: rgb(255, 255, 255);
 }
 
-.button-buttons-filters:focus {
-	background-color: rgb(255, 255, 255);
-	color: rgb(100, 100, 255);
-}
 .button-button-search:focus {
 	background-color: rgb(255, 255, 255);
 	color: rgb(100, 100, 255);
