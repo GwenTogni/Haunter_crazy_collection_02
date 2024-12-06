@@ -1,7 +1,7 @@
 /* Default stylesheet and tools */
 body,
 html {
-	background: rgb(255, 255, 255);
+	background: rgb(60, 60, 150);
 	padding: 0;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -84,7 +84,7 @@ input {
 
 #container>ul>li {
 	list-style: none;
-	width: 220px;
+	width: 320px;
 	height: auto;
 	position: relative;
 }
