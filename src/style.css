@@ -5,33 +5,34 @@ html {
 	padding: 0;
 	margin: 0;
 	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 11px;
+	font-size: 18px;
 	transition: all 0.2s ease-in-out;
 }
 
 button {
 	width: fit-content;
-	background-color: rgb(255, 255, 255);
+	background-color: rgb(60, 60, 150);
 	padding: 10px;
-	margin-bottom: 3px;
+	margin: 5px;
 	border-radius: 50px;
-	color:  rgb(0, 0, 0);
-	border-color:  rgb(100, 100, 255);
-	border-style: solid;
+	color:  rgb(255, 255, 255);
+	border: none;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 18px;
 }
 
 button>img {
 	max-width: 40px;
 }
 
-button:focus {
+button:hover {
 	background-color: rgb(100, 100, 255);
 	color: rgb(255, 255, 255);
 }
 
-.button-button-search:focus {
-	background-color: rgb(255, 255, 255);
-	color: rgb(100, 100, 255);
+button:focus {
+	background-color: rgb(100, 100, 255);
+	color: rgb(255, 255, 255);
 }
 
 canvas {
@@ -127,7 +128,7 @@ input {
 	left: 0px;
 	width: 100vw;
 	top: 0px;
-	padding: 10px;
+	padding: 20px;
 
 }
 
